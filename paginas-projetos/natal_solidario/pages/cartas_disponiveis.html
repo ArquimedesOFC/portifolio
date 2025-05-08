@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Natal ByteHug</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .navbar {
+      background-color: #C01D18;
+    }
+
+    .navbar a,
+    #navbarNavDropdown a {
+      font-size: 16px;
+      color: white;
+      font-weight: 600;
+    }
+
+    #navbarNavDropdown a {
+      border: 2px solid #fff;
+      border-radius: 30px;
+      padding: 8px 20px;
+    }
+
+    #navbarNavDropdown a:hover {
+      color: #418831;
+      background-color: rgba(255, 255, 255, 0.788);
+      text-decoration: none;
+    }
+
+    .card {
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.089);
+      border: none;
+      margin-bottom: 25px;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 14px rgba(0, 0, 0, 0.089);
+    }
+
+    .card img,
+    .card embed {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      min-height: 40px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+
+    .instituição-text {
+      min-height: 35px;
+    }
+
+    .pedido-text {
+      min-height: 40px;
+    }
+
+    .button-green,
+    .button-blue,
+    .button-red {
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 13px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .button-green {
+      background-color: #4ca339;
+    }
+
+    .button-green:hover,
+    .button-green:active {
+      background-color: #418831 !important;
+    }
+
+    .button-blue {
+      background-color: #12c9fd;
+    }
+
+    .button-blue:hover,
+    .button-blue:active {
+      background-color: #11aad4 !important;
+    }
+
+    .button-red {
+      background-color: #a62e2e;
+      cursor: default !important;
+    }
+
+    .button-red:hover,
+    .button-red:active {
+      background-color: #972929 !important;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagination a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .pagination a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    .alert-error {
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../imagens/logo.png" alt="Logo" style="max-height:100px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <!-- Nav items if needed -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION -->
+  <div class="container-fluid present-list mt-4 mb-4">
+    <div class="row">
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Card (repita conforme necessário) -->
+      <div class="present-item col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card">
+          <embed src="../imagens/carta.png" type="application/pdf">
+          <div class="card-body">
+            <h5 class="card-title">NOME</h5>
+            <p class="card-text">Idade: <b>IDADE</b></p>
+            <p class="card-text">Sexo: <b>SEXO</b></p>
+            <p class="card-text instituição-text">Instituição: <b>NOME DA INSTITUIÇÃO</b></p>
+            <p class="card-text pedido-text">Pedido: <b style="text-transform: lowercase;">PEDIDOS</b></p>
+            <a class="btn button-blue mt-1" data-toggle="modal" data-target="#modal-carta">Ler Carta</a>
+            <a class="btn button-red mt-1" href="#">Aguardando implementação de meio de contato</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
