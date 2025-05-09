@@ -1,18 +1,4 @@
-From: <Saved by Blink>
-Snapshot-Content-Location: https://chatgpt.com/
-Subject: Remover CSS do site
-Date: Fri, 25 Apr 2025 16:49:46 -0300
-MIME-Version: 1.0
-Content-Type: multipart/related;
-	type="text/html";
-	boundary="----MultipartBoundary--2sH1EYhlWMzyMfmkce1Fz5bMiZgCADpxEJ8uSB4P11----"
 
-
-------MultipartBoundary--2sH1EYhlWMzyMfmkce1Fz5bMiZgCADpxEJ8uSB4P11----
-Content-Type: text/html
-Content-ID: <frame-76B77C486A7B15E0B62A7BECD78E79D1@mhtml.blink>
-Content-Transfer-Encoding: quoted-printable
-Content-Location: https://chatgpt.com/
 
 <!DOCTYPE html><html lang=3D"pt-BR" data-build=3D"prod-a781444a4c5f3f2f82db=
 57b58f657e11ef63a223" dir=3D"ltr" class=3D"_page-to-page-transition_1ro0n_1=
@@ -15445,3 +15431,15 @@ Content-Transfer-Encoding: quoted-printable
 <html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
 =3DUTF-8"></head><body bis_status=3D"ok" bis_frame_id=3D"291"></body></html>
 ------MultipartBoundary--2sH1EYhlWMzyMfmkce1Fz5bMiZgCADpxEJ8uSB4P11------
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+}
