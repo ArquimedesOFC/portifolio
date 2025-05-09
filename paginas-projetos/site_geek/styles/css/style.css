@@ -590,3 +590,14 @@ footer p {
     line-height: 2.2rem;
     color: #C4C4C4
 }
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}
