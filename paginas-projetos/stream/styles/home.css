@@ -275,3 +275,18 @@ footer {
     margin: 0 auto;
   } /*# sourceMappingURL=style.css.map */
   
+@media (max-width: 768px) {
+  .movie-card, .tv-show-card {
+    width: 100%;
+  }
+
+  .stream-header, .stream-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stream-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
